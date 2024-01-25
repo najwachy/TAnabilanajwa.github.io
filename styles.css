@@ -1,0 +1,250 @@
+/* Reset styling default untuk elemen-elemen HTML */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Arial", sans-serif;
+}
+
+/* Header styling */
+header {
+  background-color: rgba(255, 255, 255, 0.8);
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  transition: background-color 0.3s; /* Efek transisi untuk perubahan warna latar belakang saat discroll */
+}
+
+/* Navbar styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  transition: padding 0.3s; /* Efek transisi untuk perubahan padding saat discroll */
+}
+
+/* Logo styling */
+.logo-container img {
+  max-height: 50px;
+}
+
+/* Link pada navbar styling */
+.navbar-links {
+  display: flex;
+  align-items: center; /* Align secara vertikal tengah */
+  justify-content: center; /* Center link secara horizontal */
+}
+
+.navbar-links a {
+  margin: 0 40px;
+  text-decoration: none;
+  color: #181616;
+}
+
+/* Styling untuk bagian halaman dan kategori */
+.page-section,
+.category-section {
+  padding: 50px;
+}
+
+.page-section:nth-child(even),
+.category-section:nth-child(even) {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+}
+
+.page-section:nth-child(odd),
+.category-section:nth-child(odd) {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+}
+
+/* Footer styling */
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center; /* Penataan teks ke tengah secara horizontal */
+  background-color: #333333be; /* Warna latar belakang footer */
+  color: #fff; /* Warna teks footer */
+  padding: 20px;
+  z-index: 1000;
+}
+
+/* Feather icon styling */
+.feather-icon {
+  font-size: 17px;
+  cursor: pointer;
+}
+
+/* Styling ketika halaman belum discroll */
+body:not(.scrolled) header {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+body:not(.scrolled) .navbar {
+  padding: 10px 20px;
+}
+
+body:not(.scrolled) header.navbar-fixed {
+  background-color: transparent;
+  padding: 20px 0;
+}
+
+body:not(.scrolled) header::after {
+  display: none;
+}
+
+/* Styling umum untuk body */
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Margin untuk setiap section */
+section {
+  margin-bottom: 20px;
+}
+
+/* Styling gambar */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Margin atas untuk paragraf */
+p {
+  margin-top: 10px;
+}
+
+/* Styling tombol "buy now" */
+.buy-now {
+  margin-top: 10px;
+}
+
+.buy-now a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #3498dbf7;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.buy-now a:hover {
+  background-color: #297fb95b;
+}
+
+/* Styling untuk box pada halaman tertentu */
+.main-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.box {
+  width: 70%;
+  padding: 20px;
+  margin: 20px 0;
+  background-color: #121010;
+  color: white;
+  border-radius: 10px;
+  box-shadow: none; /* Menghapus bayangan */
+}
+
+.box:nth-child(even) {
+  background-color: #000000; /* Ganti warna latar belakang untuk section genap */
+  color: rgb(255, 255, 255);
+}
+
+/* Styling umum untuk body dengan latar belakang */
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+/* Styling untuk container form */
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling untuk judul h1 */
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+/* Styling untuk form */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Margin bawah untuk label */
+label {
+  margin-bottom: 8px;
+}
+
+/* Styling untuk input */
+input {
+  padding: 10px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Styling untuk tombol */
+button {
+  padding: 12px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Styling untuk hasil form */
+#result {
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+}
+/* Styling untuk Footer */
+.footer {
+  position: relative;
+  bottom: 0;
+  background-color: black;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+}
+
+.footer-icon {
+  border-radius: 50%;
+  border: 1px solid white;
+}

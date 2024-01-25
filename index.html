@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <title>nastore</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo-container">
+                <img src="logo.png" alt="NaStore Logo">
+            </div>
+            <div class="navbar-links">
+                <a href="na-be.html">na-be</a>
+                <a href="na-co.html">na-co</a>
+                <a href="na-fa.html">na-fa</a>
+                <a href="na-bo.html">na-bo</a>
+                <a href="about-us.html">About Us</a>
+                <a href="tempat membeli.html">tempat membeli</a>
+                <div class="search-container">
+                    <input type="text" id="category-search" placeholder="Search category...">
+                    <form id="searchForm">
+                      <span id="search-icon" class="feather-icon">🔍</span>
+                    </form>
+                    
+                    <div id="searchResults"></div>
+                  </div>                  
+        </nav>
+    </header>
+    <section id="category-section" class="page-section" style="background-image: url('about-us-background.jpg');">
+        <video autoplay width="100%" height="auto" loop muted>
+            <source src="nastore.mp4" type="video/mp4">
+        </video>
+    </section>
+    <section>
+        <a href="tempat membeli.html">
+            <img src="diskon.png" alt="Deskripsi Gambar 2">
+        </a>
+    </section>
+    
+    <section id="category-section" class="page-section" style="background-image: url('about-us-background.jpg');">
+        <video autoplay width="100%" height="auto" loop muted>
+         <source src="skincare.mp4" type="video/mp4">
+        </video>
+    </section>
+    
+    <section id="category-section" class="page-section" style="background-image: url('about-us-background.jpg');">
+        <video autoplay width="100%" height="auto" loop muted>
+            <source src="fashion.mp4" type="video/mp4">
+        </video>
+    </section>
+    
+    <section id="category-section" class="page-section" style="background-image: url('about-us-background.jpg');">
+        <video autoplay width="100%" height="auto" loop muted>
+            <source src="buku.mp4" type="video/mp4">
+        </video>
+    </section>
+    
+    <section id="category-section" class="page-section" style="background-image: url('about-us-background.jpg');">
+        <video autoplay width="100%" height="auto" loop muted>
+            <source src="cosmetic.mp4" type="video/mp4">
+        </video>
+    </section>
+    
+    
+
+    <div class="footer">
+        <a href="https://www.instagram.com/nabila.najwa_/?hl=en"><i data-feather="instagram"></i>
+            <a href="https://www.youtube.com/channel/@nabilanajwaa" target="_blank"><i data-feather="youtube"></i></a>
+            <a href="link-to-twitter" ></a><i data-feather="linkedin"></i>
+        <p>© Hak Cipta. Semua hak dilindungi.</p>
+     </div>
+     
+
+<script src="https://unpkg.com/feather-icons"></script>
+<script>
+    // JavaScript untuk memutar ulang video saat selesai
+    const videos = document.querySelectorAll('video');
+
+    videos.forEach(video => {
+        video.addEventListener('ended', function () {
+            this.currentTime = 0;
+            this.play();
+        }, false);
+    });
+    feather.replace();
+    alert('heloo nama saya nabila najwa dari 12 mia 7😊 ')
+</script>
+</body>
+</html>
